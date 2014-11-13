@@ -1,0 +1,17 @@
+#ifndef NETWORK_VERSION_HPP
+#define NETWORK_VERSION_HPP
+
+// #include <boost/config.hpp>
+#define __STRINGIFY__(x)            #x
+
+#define NETLIBX_VERSION_MAJOR     __STRINGIFY__(1)
+#define NETLIBX_VERSION_MINOR     __STRINGIFY__(0)
+#define NETLIBX_VERSION_INCREMENT __STRINGIFY__(0a)
+#define DOT                       __STRINGIFY__(.)
+
+#ifndef NETLIBX_VERSION
+#define NETLIBX_VERSION \
+    NETLIBX_VERSION_MAJOR DOT NETLIBX_VERSION_MINOR DOT NETLIBX_VERSION_INCREMENT
+#endif //NETLIBX_VERSION
+
+#endif // NEWORK_VERSION_HPP
